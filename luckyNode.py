@@ -46,6 +46,6 @@ if __name__ == '__main__':
             if end-start > 10800:
                 main()
                 break
-            else:
-                print('距离下次抽奖还有: {}sec\r'.format(10800-(end-start)), end='')
+            elif (end - start) % 60 == 0:
+                print('距离下次抽奖还有: {:}分钟\r'.format(int((10800 - (end - start))/60)), end='')
     
