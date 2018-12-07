@@ -41,11 +41,11 @@ if __name__ == '__main__':
     main()
     while True:
         start = time.time()
-    while True:
-        end = time.time()
-        if end-start > 10800:
-            main()
-            break
-        else:
-            print('距离下次抽奖还有: {}sec\r'.format(10800-(end-start)), end='')
+        while True:
+            end = time.time()
+            if end-start > 10800:
+                main()
+                break
+            else:
+                print('距离下次抽奖还有: {}sec\r'.format(10800-(end-start)), end='')
     
